@@ -1,6 +1,8 @@
 *{
     font-family: 'Ubuntu', sans-serif;
+
 }
+
 
 .header, .list {
     display: flex;
@@ -39,10 +41,21 @@ a{
 }
 
 .list-item:hover{
-    transform: absolute;
+ 
+    transform: scale(1.2);
 }
 
-.list h3{
-    padding-left: 350px;
-    font-size: larger;
+.slogan {
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+.slogan h2{
+    border-style: inset;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.logo{
+    padding-top: 5px;
 }
