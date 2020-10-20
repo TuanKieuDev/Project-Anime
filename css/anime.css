@@ -1,0 +1,40 @@
+.btn-group{
+    padding-top: 70px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+
+}
+
+.themed-container {
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+  margin-left: 20px;
+  background-color: rgba(0, 123, 255, .15);
+  border: 1px solid rgba(0, 123, 255, .2);
+}
+
+.image img{
+  display: block;
+  height: 300px;
+  width: 70%;
+  border-radius: 15px;
+  margin: 0 auto; 
+}
+
+.image figcaption{
+  text-align: center;
+  font-size: larger;
+}
+
+.image img:hover{
+  opacity: 0.7;
+  filter: alpha(opacity=30);
+  transform: scale(1.05);
+}
