@@ -1,0 +1,104 @@
+body{
+  font-family: Tahoma;
+  font-size: 13px;
+  width: 1000px;
+  margin: 0px auto;
+}
+#header{
+  background: #ff4d00;
+  height: 50px;
+  width: 1000px;
+
+}
+#banner{
+  height:auto;
+  width: auto;
+  
+  
+}
+
+#main #left{
+  width: 700px;
+  height: 800px;
+  
+  float: left;
+}
+#main #right{
+  width: 300px;
+ 
+  float: left;
+  height: 800px;
+  min-height: 400px;
+}
+#header ul{
+  margin: 0px;
+  padding: 0px;
+}
+#header ul li{
+  list-style: none;
+  float: left;
+}
+#header ul li a{
+  text-decoration:none;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  color: #fafbfc;
+  padding: 0px 10px 0px 10px;
+}
+#main #left ul{
+  margin: 0px;
+  padding: 0px;
+}
+#main #left ul li{
+  list-style: none;
+  clear: left;
+  float: left;
+  margin-bottom: 20px;
+}
+#main #left ul li img {
+  float: left;
+  margin-right: 10px;
+}
+#main #left ul li h6 a{
+ text-decoration: none;
+ background-color:#4cb1ff;
+ color: #fafbfc;
+ padding: 7px 10px;
+ 
+
+ 
+}
+
+#main #left ul li h4 a{
+  text-decoration: none;
+  color: black;
+  
+
+}
+#main #left ul li p{
+  color: #a99997;
+}
+
+#main{
+  margin-top: 10px;
+}
+#main #left ul li h6{
+  margin-top: 8px;
+}
+#right .menu_right ul li img{
+  width: 130px;
+  height: 70px;
+  float: left;
+
+}
+#right .menu_right ul li{
+  list-style: none;
+}
+#right .menu_right ul li h4 a{
+  text-decoration: none;
+}
+#right .menu_right h3{
+  background: #ff4d00;
+  background-size: 5px 3px 5px 3px;
+}
