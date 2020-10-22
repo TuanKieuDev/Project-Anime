@@ -21,7 +21,7 @@ function Back() {
     ChuyenSlide.style.marginLeft = '-' + Chuyen +'px';
 }
 
-function Play() {
-        let i = Chuyen/1000;
-        window.location = AnimePlay[i];
-}
+// function Play() {
+//         let i = Chuyen/1000;
+//         window.location = AnimePlay[i];
+// }

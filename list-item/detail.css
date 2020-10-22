@@ -1,0 +1,31 @@
+#relative .img-fluid{
+    width: 200px;
+    height: 250px;
+}
+#relative .img-fluid:hover{
+    transform: scale(1.1);
+    transition: all ease 300ms;
+}
+.anime-relative{
+    cursor: pointer;
+}
+#anime-detail img{
+    height: 350px;
+    width: 270px;
+}
+
+.container {
+    margin-top: 70px;
+}
+
+.text-bonus1{
+    color: blue;
+}
+
+.text-bonus2{
+    color: rgb(165, 165, 39);
+}
+
+.text-bonus3{
+    color: green;
+}

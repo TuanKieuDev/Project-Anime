@@ -1,3 +1,7 @@
+/* .btn-container {
+  text-align: center;
+}
+
 .btn-group{
     padding-top: 70px;
     padding-left: 10px;
@@ -26,6 +30,7 @@
   width: 70%;
   border-radius: 15px;
   margin: 0 auto; 
+  border-style: solid;
 }
 
 .image figcaption{
@@ -37,4 +42,41 @@
   opacity: 0.7;
   filter: alpha(opacity=30);
   transform: scale(1.05);
+} */
+
+.card img:hover{
+  transform: scale(1.1);
+  transition: all ease 300ms;
 }
+.card img{
+  height: 270px;
+  width: 220px;
+  border-radius: 15px;
+  border-style: solid;
+}
+
+.cursor-p{
+  cursor: pointer;
+}
+
+.jumbotron{
+  background-image: url('https://i.pinimg.com/originals/63/13/d9/6313d9dd8d625fc008b4b0a7e27a2291.jpg');
+}
+
+.card-title {
+  margin-bottom: .75rem;
+  text-align: center;
+}
+
+.display-3 {
+  text-align: center;
+}
+
+.text-danger{
+  text-align: end;
+}
+
+.btn-container {
+  text-align: center;
+}
+

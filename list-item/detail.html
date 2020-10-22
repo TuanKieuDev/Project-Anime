@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime</title>
+    <title>Detail</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="../css/anime.css">
-
+        <link rel="icon" href="http://i.imgur.com/SQ5D74B.png">
+    <link rel="stylesheet" href="detail.css">
 </head>
 
 <body>
@@ -47,73 +46,40 @@
             </div>
           </nav>
     </header>
-    <main role="main">
 
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-          
-          <div class="container">
-            <h1 class="display-3">Anime!</h1>
-            
 
-            <div class="btn-container">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Genres
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Comedy</a>
-                      <a class="dropdown-item" href="#">Fantasy</a>
-                      <a class="dropdown-item" href="#">Adventure</a>
-                      <a class="dropdown-item" href="#">Hentai</a>
-                      <a class="dropdown-item" href="#">Shounen</a>
-                      <a class="dropdown-item" href="#">Shoujo</a>
-                  </div>
-                </div>
-              
-                <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Year
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">2020</a>
-                      <a class="dropdown-item" href="#">2019</a>
-                      <a class="dropdown-item" href="#">2018</a>
-                      <a class="dropdown-item" href="#">2017</a>
-                      <a class="dropdown-item" href="#">2016</a>
-                  </div>
-                </div>
-              
-                <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Sort
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Popular</a>
-                      <a class="dropdown-item" href="#">Comment</a>
-                      <a class="dropdown-item" href="#">Rate</a>
-                      <a class="dropdown-item" href="#">Status</a>
-                      <!-- <a class="dropdown-item" href="#">Recent</a> -->
-                  </div>
-                </div>  
-      
+    <div class="container">
+
+        <h1 class="my-4">Anime
+            <small id="anime-name"></small>
+        </h1>
+
+        <!-- Portfolio Item Row -->
+        <div class="row" id="anime-detail">
+            <div class="col-md-4">
+                <img class="img-fluid" id="anime-img" src="" alt="">
             </div>
-            
-          </div>
-        </div>
-        <div class="container">
-            <div id="animes" class="row">
-    
+
+            <div class="col-md-8">
+                <p id="anime-des"></p>
+                <hr>
+                <ul>
+                    <li>Rate: <span id="anime-rate" class="text-danger"></span></li>
+                    <li>Genres: <span id="anime-genres" class="text-bonus1"></span></li>
+                    <li>Year: <span id="anime-year" class="text-bonus2"></span></li>
+                    <li>Status: <span id="anime-status" class="text-bonus3"></span></li>
+                </ul>
             </div>
+
         </div>
-      
-      </main>
-      <footer class="container">
-        <hr>
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 MindX, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+        <!-- /.row -->
+        <h3 class="my-4">Another anime</h3>
+
+        <div class="row" id="relative">
+
+        </div>
+        <!-- /.row -->
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -124,7 +90,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="../js/anime.js"></script>
+
+    <script src="../js/detail.js"></script>
+
 </body>
 
 </html>
