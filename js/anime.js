@@ -7,6 +7,7 @@ let animes = [
         genres: 'Action',
         year: 2018,
         status: 'Not done',
+        video: 'https://www.youtube.com/embed/NX1tuVRTc3M',
     },
     {
         name: 'Haikyuu',
@@ -16,6 +17,7 @@ let animes = [
         genres: 'Shounen',
         year: 2018,
         status: 'Done',
+        video: 'https://www.youtube.com/embed/zYs7ZYW0vyA',
     },
     {
         name: 'To love-ru',
@@ -25,6 +27,7 @@ let animes = [
         genres: 'Hentai',
         year: 2017,
         status: 'Done',
+        video: 'https://www.youtube.com/embed/YgNL_TdQ6t8',
     },
     {
         name: 'Grand Blue',
@@ -34,6 +37,7 @@ let animes = [
         genres: 'Comedy',
         year: 2016,
         status: 'Done',
+        video: 'https://www.youtube.com/embed/PqI8iNKcxIQ',
     },
     {
         name: 'Made in Abyss',
@@ -43,6 +47,7 @@ let animes = [
         genres: 'Fantasy',
         year: 2017,
         status: 'Done',
+        video: 'https://www.youtube.com/embed/qNPq7sTdI-M',
     },
     {
         name: 'Sword Art Online',
@@ -52,6 +57,7 @@ let animes = [
         genres: 'Adventure',
         year: 2016,
         status: 'Not Done',
+        video: 'https://www.youtube.com/embed/UJ85ZbCtpA4',
     },
     {
         name: 'Dr.Stones',
@@ -61,6 +67,7 @@ let animes = [
         genres: 'Adventure',
         year: 2019,
         status: 'Not Done',
+        video: 'https://www.youtube.com/embed/Yq23a6udMqU',
     },
     {
         name: 'Fate Grand Order',
@@ -69,7 +76,8 @@ let animes = [
         img: '../images/trending/trend-8.jpg',
         genres: 'Action',
         year: 2020,
-        status: 'Done'
+        status: 'Done',
+        video: 'https://www.youtube.com/embed/-7g-mcovyng',
     },
     {
         name: 'The Irregular at Magic High School',
@@ -79,6 +87,7 @@ let animes = [
         genres: 'Fantasy',
         year: 2020,
         status: 'Not Done',
+        video: 'https://www.youtube.com/embed/4HmxNXyT_04',
     },
     {
         name: 'One Piece',
@@ -88,6 +97,7 @@ let animes = [
         genres: 'Shounen',
         year: 2018,
         status: 'Not Done',
+        video: 'https://www.youtube.com/embed/Uf6vEPjXPcI',
     },
     {
         name: 'Konosuba',
@@ -97,6 +107,7 @@ let animes = [
         genres: 'Comedy',
         year: 2020,
         status: 'Done',
+        video: 'https://www.youtube.com/embed/WYIcNqPH-2Y',
     },
     {
         name: 'Date a live',
@@ -106,6 +117,7 @@ let animes = [
         genres: 'Shoujo',
         year: 2016,
         status: 'Not Done',
+        video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/GC4vj7PCPCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
     },
     {
         name: 'Hunter x Hunter',
@@ -115,15 +127,17 @@ let animes = [
         genres: 'Shounen',
         year: 2018,
         status: 'Not done',
+        video: 'https://www.youtube.com/watch?v=ynGpH33odMY',
     },
     {
         name: 'Doraemon',
         rate: 9.7,
-        description: 'Blue robot cat come from the future in order to help Nobita Nobi solve his problem in life',
+        description: 'Blue robot cat come from the future in order to help Nobita Nobi solve his problem .',
         img: '../images/trending/trend-14.jpg',
         genres: 'Comedy',
         year: 2019,
         status: 'Done',
+        video: 'https://www.youtube.com/watch?v=ynGpH33odMY',
     },
     {
         name: 'Conan',
@@ -133,6 +147,7 @@ let animes = [
         genres: 'Action',
         year: 2017,
         status: 'Not done',
+        video: 'https://www.youtube.com/embed/-XFgSjz95kQ',
     },
 ];
 
@@ -165,8 +180,9 @@ function displayAnimes(listAnimes){
 }
 displayAnimes(animes);
 
+
 function getShortDescription(des){
-    return des.substring(0, 150) + (des.length > 150 ? '...' : '');
+    return des.substring(0, 100) + (des.length > 100 ? '...' : '');
 }
 
 function viewDetail(name){
@@ -174,3 +190,4 @@ function viewDetail(name){
     localStorage.setItem('animes', JSON.stringify(animes));
     window.location.href = 'detail.html';
 }
+
