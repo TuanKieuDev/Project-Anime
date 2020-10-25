@@ -95,5 +95,6 @@ function enterComment(e) {
 
 function chamDiem(n) {
     let diem = document.getElementsByName("rate");
-    alert(`You voted ${n} stars`);
+    if(n==1) alert(`You voted 1 star`);
+    else alert(`You voted ${n} stars`);
 }
