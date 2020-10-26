@@ -1,4 +1,4 @@
-let animes = [
+let animesDemo = [
     {
         name: 'Boruto',
         rate: 7.5,
@@ -117,7 +117,7 @@ let animes = [
         genres: 'Shoujo',
         year: 2016,
         status: 'Not Done',
-        video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/GC4vj7PCPCM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+        video: 'https://www.youtube.com/embed/EZahSVg4wCU',
     },
     {
         name: 'Hunter x Hunter',
@@ -127,7 +127,7 @@ let animes = [
         genres: 'Shounen',
         year: 2018,
         status: 'Not done',
-        video: 'https://www.youtube.com/watch?v=ynGpH33odMY',
+        video: 'https://www.youtube.com/embed/G3bCqi0Oj3s',
     },
     {
         name: 'Doraemon',
@@ -137,7 +137,7 @@ let animes = [
         genres: 'Comedy',
         year: 2019,
         status: 'Done',
-        video: 'https://www.youtube.com/watch?v=ynGpH33odMY',
+        video: 'https://www.youtube.com/embed/UzWpkUCSDP4',
     },
     {
         name: 'Conan',
@@ -150,6 +150,9 @@ let animes = [
         video: 'https://www.youtube.com/embed/-XFgSjz95kQ',
     },
 ];
+luutru();
+
+
 
 function displayAnimes(listAnimes){
     let domAnime = document.getElementById('animes');
@@ -178,16 +181,20 @@ function displayAnimes(listAnimes){
         domAnime.innerHTML += html;
     }
 }
-displayAnimes(animes);
+
 
 
 function getShortDescription(des){
     return des.substring(0, 100) + (des.length > 100 ? '...' : '');
 }
 
+function luutru() {
+    localStorage.setItem('animes', JSON.stringify(animesDemo));
+}
+
 function viewDetail(name){
+    
     localStorage.setItem('selected', name);
-    localStorage.setItem('animes', JSON.stringify(animes));
     window.location.href = 'detail.html';
 }
 
