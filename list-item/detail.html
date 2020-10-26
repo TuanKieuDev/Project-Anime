@@ -40,8 +40,8 @@
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-anime">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit" onclick="search()">Search</button>
               </form>
             </div>
           </nav>
@@ -69,9 +69,29 @@
                     <li>Year: <span id="anime-year" class="text-bonus2"></span></li>
                     <li>Status: <span id="anime-status" class="text-bonus3"></span></li>
                 </ul>
-            </div>
-
+                <div id="anime-videos">
+                  <iframe id="anime-video" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br>
+                <div class="rate">
+                  <h3>Do you like this anime?</h3>
+                  <input type="radio" id="star5" name="rate" value="5" onclick="chamDiem(5)"/>
+                  <label for="star5" title="text">5 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4" onclick="chamDiem(4)"/>
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star3" name="rate" value="3" onclick="chamDiem(3)"/>
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2" onclick="chamDiem(2)"/>
+                  <label for="star2" title="text">2 stars</label>
+                  <input type="radio" id="star1" name="rate" value="1" onclick="chamDiem(1)"/>
+                  <label for="star1" title="text">1 star</label>
+                </div>
+            </div> 
         </div>
+
+        <br>
+        <br>
+        <br>  
         <!-- /.row -->
         <h3 class="my-4">Another anime</h3>
 
@@ -79,7 +99,31 @@
 
         </div>
         <!-- /.row -->
+
+
+
+
+
+
+        <!--Comment here-->
+        <div class="comment">
+          <h3 class="my-4">Comments</h3>
+          <div class="comment-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Anonymous_emblem.svg/160px-Anonymous_emblem.svg.png" width="70px" alt="guess">
+            <input type="text" onkeypress="enterComment(event)" placeholder="Comment here ..." id="noi-dung">
+            <br>
+          <button onclick="addComment()">Send</button>
+          </div>
+          <h4><br>Guess (20/10/2020-20:47:25): Admin đz quá</h4>
+          <div id="display"></div>
+          
+        </div>
     </div>
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2020 MindX, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+    
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -92,7 +136,8 @@
         crossorigin="anonymous"></script>
 
     <script src="../js/detail.js"></script>
-
+    <script src="../js/search.js"></script>
+    <script src="../js/anime.js"></script>
 </body>
 
 </html>

@@ -25,3 +25,7 @@ function Back() {
 //         let i = Chuyen/1000;
 //         window.location = AnimePlay[i];
 // }
+
+setInterval(function(){
+    Next();
+}, 4000);

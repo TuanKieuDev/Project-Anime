@@ -12,6 +12,7 @@ document.getElementById('anime-des').innerHTML = anime.description;
 document.getElementById('anime-genres').innerHTML = anime.genres;
 document.getElementById('anime-year').innerHTML = anime.year;
 document.getElementById('anime-status').innerHTML = anime.status;
+document.getElementById('anime-video').src = anime.video;
 
 function getRelative() {
     let relative = document.getElementById('relative');
@@ -30,10 +31,23 @@ function getRelative() {
                 <img class="img-fluid" src="${p.img}" alt="">
                 <p class="mt-2 font-weight-bold">${p.name}</p>
             </div>
-        `;
+        `;   
         relative.innerHTML += html;
     }
 }
+
+// function demo() {
+//     let vid = document.getElementById('anime-video');
+//     vid.innerHTML = '';
+//     let k = 0;
+//     for (let i = 0; i < animes.length; i++) {
+//         let element = animes[i];
+//         let phim = `<iframe width="560" height="315" src="${element.video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+//         vid.innerHTML = phim;
+//     }
+// }
+
+// demo();
 getRelative();
 
 function viewDetail(name){
@@ -44,3 +58,43 @@ function viewDetail(name){
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min) ) + min;
   }
+
+  
+
+let listComments = [];
+function addComment() {
+
+    let commentDom = document.getElementById('noi-dung');
+    let comment = commentDom.value.trim();
+    if(comment===''){
+        return;
+    }
+    commentDom.value = '';
+    listComments.push(comment);
+    displayListComments(listComments);
+
+}
+
+function displayListComments(binhluan) {
+    let listCommentsDom = document.getElementById('display');
+    listCommentsDom.innerHTML = '';
+    let today = new Date();
+    let date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    for (let i = 0; i < binhluan.length; i++) {
+        const commentName = binhluan[i];
+        listCommentsDom.innerHTML += `<br><h4>Guess (${date}-${time}): ${commentName}</h4>`;
+    }
+}
+
+function enterComment(e) {
+    if(e.key==='Enter'){
+        addComment();
+    }
+}
+
+function chamDiem(n) {
+    let diem = document.getElementsByName("rate");
+    if(n==1) alert(`You voted 1 star`);
+    else alert(`You voted ${n} stars`);
+}

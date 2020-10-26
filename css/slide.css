@@ -24,6 +24,7 @@
     font-size: 40px;
     top: 45%;
     padding-left: 10px;
+    display: none;
 }
 
 .dieuhuong i:last-child{
@@ -37,4 +38,8 @@
     font-size: 60px;
     padding-left: 10px;
     top: 80%;
+}
+
+.slide:hover .dieuhuong{
+    display: block;
 }
