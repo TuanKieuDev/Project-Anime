@@ -4,22 +4,17 @@ body{
   width: 1000px;
   margin: 0px auto;
 }
-#header{
-  background: #ff4d00;
-  height: 50px;
-  width: 1000px;
 
-}
 #banner{
   height:auto;
   width: auto;
-  
+  margin-top: 10px;
   
 }
 
 #main #left{
   width: 700px;
-  height: 800px;
+  height: 1000px;
   
   float: left;
 }
@@ -27,25 +22,10 @@ body{
   width: 300px;
  
   float: left;
-  height: 800px;
+  height: 1000px;
   min-height: 400px;
 }
-#header ul{
-  margin: 0px;
-  padding: 0px;
-}
-#header ul li{
-  list-style: none;
-  float: left;
-}
-#header ul li a{
-  text-decoration:none;
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  color: #fafbfc;
-  padding: 0px 10px 0px 10px;
-}
+
 #main #left ul{
   margin: 0px;
   padding: 0px;
@@ -55,26 +35,31 @@ body{
   clear: left;
   float: left;
   margin-bottom: 20px;
+  height: 100px;
+  margin-top: 20px;
 }
 #main #left ul li img {
   float: left;
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 130%;
+  width: 120px;
+}
+
+#left li p {
+  margin-left: 120px;
 }
 #main #left ul li h6 a{
  text-decoration: none;
  background-color:#4cb1ff;
  color: #fafbfc;
- padding: 7px 10px;
- 
-
- 
+ padding: 2px 0px;
+ font-size: 13px
 }
 
 #main #left ul li h4 a{
   text-decoration: none;
   color: black;
-  
-
 }
 #main #left ul li p{
   color: #a99997;
@@ -86,10 +71,15 @@ body{
 #main #left ul li h6{
   margin-top: 8px;
 }
+#right .menu_right ul{
+  padding: 0px;
+}
 #right .menu_right ul li img{
-  width: 130px;
-  height: 70px;
+  width: 50%;
+  height: 100%;
   float: left;
+  margin-top: 14px;
+  margin-right: 10px;
 
 }
 #right .menu_right ul li{
@@ -97,8 +87,14 @@ body{
 }
 #right .menu_right ul li h4 a{
   text-decoration: none;
+  font-size: 15px;
+  color: #333;
+  font-weight: bold
 }
 #right .menu_right h3{
   background: #ff4d00;
-  background-size: 5px 3px 5px 3px;
+  text-align: center;
+  margin-top: 25px;
+
 }
+
