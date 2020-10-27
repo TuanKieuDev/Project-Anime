@@ -17,9 +17,8 @@
 }
 
 .jumbotron h1 {
-  font-weight: 700;
-  font-style: italic;
-  color: aquamarine
+  font-weight: 400;
+  color: white;
 }
 
 .jumbotron .container {
@@ -33,5 +32,9 @@ footer {
 
 footer p {
   margin-bottom: .25rem;
+}
+
+body{
+  line-height: 1.7;
 }
 

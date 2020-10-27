@@ -19,3 +19,20 @@ function enterSearch(e) {
     }
 }
 
+function genresSearch(n) {
+    let result = animes2.filter(function (v) {
+        return v.genres.includes(n);
+    });
+    displayAnimes(result);
+}
+
+function yearSearch(n) {
+    let result = animes2.filter(function(v) {
+        if(n===v.year) return v.year;
+    });
+    displayAnimes(result);
+}
+
+function rate(n) {
+    
+}

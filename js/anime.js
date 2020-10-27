@@ -198,3 +198,8 @@ function viewDetail(name){
     window.location.href = 'detail.html';
 }
 
+function xemphim(name){
+    
+    localStorage.setItem('selected', name);
+    window.location.href = 'list-item/detail.html';
+}

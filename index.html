@@ -35,7 +35,7 @@
                   <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="list-item/More/about-us.html">About us</a>
                     <a class="dropdown-item" href="list-item/More/references.html">References</a>
-                    <a class="dropdown-item" href="list-item/More/album.html">Album</a>
+              
                   </div>
                 </li>
               </ul>
@@ -50,11 +50,11 @@
     <div class="slide">
         
         <div class="chuyen-slide">
-            <img src="images/1.jpg" alt="mahouka">
-            <img src="images/2.png" alt="konosuba">
-            <img src="images/3.jpg" alt="FGO">
-            <img src="images/4.jpg" alt="boruto">
-            <img src="images/5.png" alt="one-piece">
+            <img src="images/1.jpg" alt="mahouka" onclick="xemphim('The Irregular at Magic High School')">
+            <img src="images/2.png" alt="konosuba" onclick="xemphim('Konosuba')">
+            <img src="images/3.jpg" alt="FGO" onclick="xemphim('Fate Grand Order')">
+            <img src="images/4.jpg" alt="boruto" onclick="xemphim('Boruto')">
+            <img src="images/5.png" alt="one-piece" onclick="xemphim('One Piece')">
         </div>
         <div class="anime-slide">
             <a href="anime-slide/mahouka.html"></a>
@@ -64,7 +64,7 @@
             <a href="anime-slide/one-piece.html"></a>
         </div>
         <div class="dieuhuong">
-          <i class="fa fa-chevron-circle-left" onclick="Back()" ></i>
+          <i class="fa fa-chevron-circle-left" onclick="Back();" ></i>
           <i class="fa fa-chevron-circle-right" onclick="Next();"></i>
       </div>
       <!-- <div class="play">
@@ -77,37 +77,37 @@
             <a href="list-item/anime.html" style="text-decoration: none;"><h1>Anime</h1></a>
         </div>
         <div class="table-anime">
-          <div class="hvrbox">
+          <div class="hvrbox" onclick="xemphim('The Irregular at Magic High School')">
             <img src="images/1.jpg" alt="mahouka"> 
             <div class="hvrbox-layer_top">
-              <div class="hvrbox-text" onclick="viewDetail('The Irregular at Magic High School')">The Irregular at Magic High School ep.13</div>
+              <div class="hvrbox-text">The Irregular at Magic High School ep.13</div>
             </div>
           </div>
             
-          <div class="hvrbox">
+          <div class="hvrbox" onclick="xemphim('Konosuba')">
             <img src="images/2.png" alt="konosuba" >
-            <div class="hvrbox-layer_top" onclick="Play()">
+            <div class="hvrbox-layer_top">
               <div class="hvrbox-text">Konosuba ep.6</div>
             </div>
           </div>
            
-          <div class="hvrbox">
+          <div class="hvrbox" onclick="xemphim('Fate Grand Order')">
             <img src="images/3.jpg" alt="FGO" >
-            <div class="hvrbox-layer_top" onclick="Play()">
-              <div class="hvrbox-text" >Fate Grand Order ep.5</div>
+            <div class="hvrbox-layer_top">
+              <div class="hvrbox-text">Fate Grand Order ep.5</div>
             </div>
           </div>
 
-          <div class="hvrbox">
+          <div class="hvrbox" onclick="xemphim('Boruto')">
             <img src="images/4.jpg" alt="boruto">
-            <div class="hvrbox-layer_top" onclick="Play()">
+            <div class="hvrbox-layer_top">
               <div class="hvrbox-text">Boruto ep.116</div>
             </div>
           </div>
 
-          <div class="hvrbox">
+          <div class="hvrbox" onclick="xemphim('One Piece')">
             <img src="images/5.png" alt="one-piece">
-            <div class="hvrbox-layer_top" onclick="Play()">
+            <div class="hvrbox-layer_top">
               <div class="hvrbox-text">One piece ep.570</div>
             </div>
           </div>
@@ -153,8 +153,60 @@
             <a href="list-item/rank.html" style="text-decoration: none;"><h1>Album</h1></a>
 
         </div>
-        <div class="table-rank">
+        <div class="table-album">
+          <div class="album py-5 bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img src="https://gamek.mediacdn.vn/133514250583805952/2020/10/5/anh-2-1601908196550702631245.jpg" alt="naruto" width="100%" height="225">
+                    <div class="card-body">
+                      <p class="card-text">This is a beautiful gallery about Naruto. Let see and enjoy!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"><a href="list-item/album/naruto.html">View</a></button>
+                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                        </div>
+                        <small class="text-muted">9 months ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img src="https://cdn.wallpapersafari.com/74/96/dB2tkn.jpg" alt="coe" width="100%" height="225">
+                    <div class="card-body">
+                      <p class="card-text">This is a beautiful gallery about Classroom Of The Elite. Let see and enjoy!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"><a href="list-item/album/coe.html">View</a></button>
+                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                        </div>
+                        <small class="text-muted">1 year ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card mb-4 shadow-sm">
+                    <img src="https://static2.aniimg.com/upload/20170518/476/p/C/O/pCOFEF.jpg" alt="dal" width="100%" height="225">
+                    <div class="card-body">
+                      <p class="card-text">This is a beautiful gallery about Date A Live. Let see and enjoy!</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"><a href="list-item/album/dal.html">View</a></button>
+                          <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                        </div>
+                        <small class="text-muted">1 year ago</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+              </div>
+            </div>
+          </div>
         </div>
     </div>
     <footer class="container">
