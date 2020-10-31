@@ -2,27 +2,28 @@ body{
     font-family: Tahoma;
     font-size: 13px;
     width: 1000px;
-    height: 2000px;
+    height: 1900px;
     margin: 0px auto;
   }
-#id123{
+#left{
     width: 700px;
-    height: 2000px;
+    height: 1900px;
+    float: left;
 
 }
 
-#id123 #page_header{
+ #left #page_header{
     width: 700px;
     margin-top: 50px ;
     color: #358ab0;
 }
-#id123 p{
+#left p{
     font-size: 16px;
 }
-#id123 p #red{
+#left p #red{
     color: red;
 }
-#id123 #id1 img{
+#left #id1 img{
     border-top-width: 1px;
     border-right-width: 1px;
     border-bottom-width: 1px;
@@ -37,21 +38,57 @@ body{
     margin-left: 120px;
     margin-right: 150px;
 }
-#id123 #id23{
+#left #id23{
     width: 700px;
 }
-#id123 #id23 #content{
+#left #id23 #content{
     width: 700px;
     margin-top: 10px;
 }
-#id123 #id23 #content #content1{
-    width: 500px;
+#left #id23 #content #content1{
+    width: 400px;
     float: left;
 }
-#id123 #id23 #content #image{
-    width: 200px;
+#left #id23 #content #image{
+    width: 300px;
+    
     /* margin: 2px 1px 0px 6px ; */
     float: left;
 
 }
-
+#left #id23 #content #image img{
+    height: 376px;
+    width: 300px;
+}
+#right{
+    width: 290px;
+    height: 1900px;
+    float: left;
+    margin-left: 10px;
+}
+#right .menu_right ul{
+    padding: 0px;
+  }
+  #right .menu_right ul li img{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-top: 14px;
+    margin-right: 10px;
+  
+  }
+  #right .menu_right ul li{
+    list-style: none;
+  }
+  #right .menu_right ul li h4 a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #333;
+    font-weight: bold
+  }
+  #right .menu_right h3{
+    background: #ff4d00;
+    text-align: center;
+    margin-top: 50px;
+  
+  }
