@@ -1,29 +1,25 @@
 body{
   font-family: Tahoma;
   font-size: 13px;
-  width: 1000px;
+  width: 100%;
   margin: 0px auto;
 }
 
-#banner{
-  height:auto;
-  width: auto;
-  margin-top: 10px;
-  
+#banner img {
+  width: 100%;
+}
+#main{
+  display: flex;
+  padding: 0 50px;
 }
 
 #main #left{
-  width: 700px;
-  height: 1000px;
-  
-  float: left;
+  width: 70%;
+ 
 }
 #main #right{
-  width: 300px;
- 
-  float: left;
-  height: 1000px;
-  min-height: 400px;
+  width: 25%;
+  margin-left: 20px;
 }
 
 #main #left ul{
@@ -46,9 +42,6 @@ body{
   width: 120px;
 }
 
-#left li p {
-  margin-left: 120px;
-}
 #main #left ul li h6 a{
  text-decoration: none;
  background-color:#4cb1ff;
@@ -76,7 +69,6 @@ body{
 }
 #right .menu_right ul li img{
   width: 50%;
-  height: 100%;
   float: left;
   margin-top: 14px;
   margin-right: 10px;
@@ -97,5 +89,20 @@ body{
   margin-top: 25px;
 
 }
+.navbar{
+  font-size: 15px;
+}
 
+.Add {
+  margin-top: 20px;
+}
 
+.Add button{
+  padding: 1px 10px;
+  background-color: #ff4d00;
+  margin-left: 30%;
+  color: #fafbfc;
+  font-size:larger;
+ 
+  
+}

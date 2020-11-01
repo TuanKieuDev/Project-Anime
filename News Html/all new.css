@@ -1,94 +1,86 @@
-body{
+body {
     font-family: Tahoma;
     font-size: 13px;
-    width: 1000px;
-    height: 1900px;
     margin: 0px auto;
-  }
-#left{
-    width: 700px;
-    height: 1900px;
-    float: left;
-
 }
 
- #left #page_header{
-    width: 700px;
-    margin-top: 50px ;
+#main {
+    display: flex;
+    padding: 0 50px;
+}
+
+#left {
+    width: 70%;
+}
+
+#left #page_header {
+    margin-top: 50px;
     color: #358ab0;
 }
-#left p{
+
+#left p {
     font-size: 16px;
 }
-#left p #red{
+
+#left p #red {
     color: red;
 }
-#left #id1 img{
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    height: 400px;
-    width: 450px;
-    margin-top: 5px;
-    margin-left: 120px;
-    margin-right: 150px;
-}
-#left #id23{
-    width: 700px;
-}
-#left #id23 #content{
-    width: 700px;
-    margin-top: 10px;
-}
-#left #id23 #content #content1{
-    width: 400px;
-    float: left;
-}
-#left #id23 #content #image{
-    width: 300px;
-    
-    /* margin: 2px 1px 0px 6px ; */
-    float: left;
 
+#left img {
+    display: block;
+    margin: 0 auto;
 }
-#left #id23 #content #image img{
-    height: 376px;
-    width: 300px;
-}
-#right{
-    width: 290px;
-    height: 1900px;
-    float: left;
+
+#right {
+    width: 30%;
+    height: auto;
     margin-left: 10px;
+    position: sticky;
+    top: 0;
 }
-#right .menu_right ul{
+
+#right .menu_right ul {
     padding: 0px;
-  }
-  #right .menu_right ul li img{
+}
+
+#right .menu_right ul li img {
     width: 50%;
-    height: 100%;
-    float: left;
-    margin-top: 14px;
+    object-fit: cover;
+    vertical-align: baseline;
     margin-right: 10px;
-  
-  }
-  #right .menu_right ul li{
+}
+
+#right .menu_right ul li h4 {
+    width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#right .menu_right ul li {
     list-style: none;
-  }
-  #right .menu_right ul li h4 a{
+    display: flex;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+#right .menu_right ul li h4 a {
     text-decoration: none;
     font-size: 15px;
     color: #333;
     font-weight: bold
-  }
-  #right .menu_right h3{
+}
+
+#right .menu_right h3 {
     background: #ff4d00;
     text-align: center;
     margin-top: 50px;
-  
-  }
+}
+
+.navbar {
+    font-size: 15px;
+}
+
+iframe {
+    display: block;
+    margin: 10px auto;
+}
