@@ -1,5 +1,5 @@
 body {
-    font-family: Tahoma;
+    
     font-size: 13px;
     margin: 0px auto;
 }
@@ -77,7 +77,7 @@ body {
 }
 
 .navbar {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 iframe {

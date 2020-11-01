@@ -2,134 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="icon" href="http://i.imgur.com/SQ5D74B.png">
-    <link rel="stylesheet" href="../css/anime.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="icon" href="http://i.imgur.com/SQ5D74B.png">
+  <link rel="stylesheet" href="../css/anime.css">
 
 
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" width="100" height="30" alt="AnimeWorld"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" width="100" height="30"
+          alt="AnimeWorld"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="anime.html">Anime <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="album.html">Album<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="../list-item/More/about-us.html">About us</a>
+              <a class="dropdown-item" href="../list-item/More/references.html">References</a>
+
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-anime"
+            onkeypress="enterSearch(event)">
+          <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="search()">Search</button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+
+      <div class="container">
+        <h1 class="display-3">Anime!</h1>
+
+
+        <div class="btn-container">
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="background-color:#343a40!important;">
+              Genres
             </button>
-          
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                  <a class="nav-link" href="anime.html">Anime <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="album.html">Album<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-                  <div class="dropdown-menu" aria-labelledby="dropdown01">
-                    <a class="dropdown-item" href="../list-item/More/about-us.html">About us</a>
-                    <a class="dropdown-item" href="../list-item/More/references.html">References</a>
-                    
-                  </div>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" id="search-anime" onkeypress="enterSearch(event)">
-                <button class="btn btn-secondary my-2 my-sm-0" type="button" onclick="search()">Search</button>
-              </form>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" onclick="genresSearch('Action')">Action</a>
+              <a class="dropdown-item" onclick="genresSearch('Comedy')">Comedy</a>
+              <a class="dropdown-item" onclick="genresSearch('Fantasy')">Fantasy</a>
+              <a class="dropdown-item" onclick="genresSearch('Adventure')">Adventure</a>
+              <a class="dropdown-item" onclick="genresSearch('Hentai')">Hentai</a>
+              <a class="dropdown-item" onclick="genresSearch('Shounen')">Shounen</a>
+              <a class="dropdown-item" onclick="genresSearch('Shoujo')">Shoujo</a>
             </div>
-          </nav>
-    </header>
-    <main role="main">
-
-        <!-- Main jumbotron for a primary marketing message or call to action -->
-        <div class="jumbotron">
-          
-          <div class="container">
-            <h1 class="display-3">Anime!</h1>
-            
-
-            <div class="btn-container">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Genres
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" onclick="genresSearch('Action')">Action</a>
-                      <a class="dropdown-item" onclick="genresSearch('Comedy')">Comedy</a>
-                      <a class="dropdown-item" onclick="genresSearch('Fantasy')">Fantasy</a>
-                      <a class="dropdown-item" onclick="genresSearch('Adventure')">Adventure</a>
-                      <a class="dropdown-item" onclick="genresSearch('Hentai')">Hentai</a>
-                      <a class="dropdown-item" onclick="genresSearch('Shounen')">Shounen</a>
-                      <a class="dropdown-item" onclick="genresSearch('Shoujo')">Shoujo</a>
-                  </div>
-                </div>
-              
-                <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Year
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#" onclick="yearSearch(2020)">2020</a>
-                      <a class="dropdown-item" href="#" onclick="yearSearch(2019)">2019</a>
-                      <a class="dropdown-item" href="#" onclick="yearSearch(2018)">2018</a>
-                      <a class="dropdown-item" href="#" onclick="yearSearch(2017)">2017</a>
-                      <a class="dropdown-item" href="#" onclick="yearSearch(2016)">2016</a>
-                  </div>
-                </div>
-              
-                <div class="btn-group">
-                  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#343a40!important;">
-                    Sort
-                  </button>
-                  <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Popular</a>
-                      <!-- <a class="dropdown-item" href="#">Comment</a> -->
-                      <a class="dropdown-item" href="#">Rate</a>
-                      <!-- <a class="dropdown-item" href="#">Status</a> -->
-                      <!-- <a class="dropdown-item" href="#">Recent</a> -->
-                  </div>
-                </div>  
-      
-            </div>
-            
           </div>
-        </div>
-        <div class="container">
-            <div id="animes" class="row">
-    
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="background-color:#343a40!important;">
+              Year
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" onclick="yearSearch(2020)">2020</a>
+              <a class="dropdown-item" href="#" onclick="yearSearch(2019)">2019</a>
+              <a class="dropdown-item" href="#" onclick="yearSearch(2018)">2018</a>
+              <a class="dropdown-item" href="#" onclick="yearSearch(2017)">2017</a>
+              <a class="dropdown-item" href="#" onclick="yearSearch(2016)">2016</a>
             </div>
-        </div>
-      
-      </main>
-      <footer class="container">
-        <hr>
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2020 MindX, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+          </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script src="../js/anime.js"></script>
-    <script src="../js/search.js"></script>
-    <script>
-      displayAnimes(animesDemo);
-    </script>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" style="background-color:#343a40!important;">
+              Sort
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" onclick="sortPopular()">Popular</a>
+              <!-- <a class="dropdown-item" href="#">Comment</a> -->
+              <a class="dropdown-item" href="#" onclick="sortRate()">Rate</a>
+              <!-- <a class="dropdown-item" href="#">Status</a> -->
+              <!-- <a class="dropdown-item" href="#">Recent</a> -->
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary" onclick="displayAnimes(favorite)">Your list</button>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <div id="animes" class="row">
+
+      </div>
+    </div>
+
+  </main>
+  <footer class="container">
+    <hr>
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2020 MindX, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/anime.js"></script>
+  <script>
+    displayAnimes(animesDemo);
+  </script>
 </body>
 
 </html>

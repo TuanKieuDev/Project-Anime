@@ -1,5 +1,5 @@
 body{
-  font-family: Tahoma;
+  /* font-family: Tahoma; */
   font-size: 13px;
   width: 100%;
   margin: 0px auto;
@@ -7,6 +7,7 @@ body{
 
 #banner img {
   width: 100%;
+  height: 360px;
 }
 #main{
   display: flex;
@@ -64,6 +65,11 @@ body{
 #main #left ul li h6{
   margin-top: 8px;
 }
+
+#main #left ul li h6 a{
+  padding: 2px 8px;
+}
+
 #right .menu_right ul{
   padding: 0px;
 }
@@ -90,7 +96,7 @@ body{
 
 }
 .navbar{
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .Add {

@@ -5,6 +5,7 @@
 
 .bg img{
     border-radius: 15px;
+    border-style: inset;
 }
 
 .container-fluid{

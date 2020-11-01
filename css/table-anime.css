@@ -1,6 +1,3 @@
-.tieu-de a{
-    color: red;
-}
 
 .table-anime {
     display: flex;
@@ -22,8 +19,13 @@
 } */
 
 .tieu-de{
-    padding-bottom: 20px;
+    padding: 20px;
     /* padding-top: px; */
+}
+
+.tieu-de .btn{
+	font-size: 25px;
+	padding: .375rem 1.75rem;
 }
 
 .hvrbox,

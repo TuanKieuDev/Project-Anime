@@ -8,6 +8,7 @@ let animesDemo = [
         year: 2018,
         status: 'Not done',
         video: 'https://www.youtube.com/embed/NX1tuVRTc3M',
+        view: 12340,
     },
     {
         name: 'Haikyuu',
@@ -18,6 +19,7 @@ let animesDemo = [
         year: 2018,
         status: 'Done',
         video: 'https://www.youtube.com/embed/zYs7ZYW0vyA',
+        view: 43320,
     },
     {
         name: 'To love-ru',
@@ -28,6 +30,7 @@ let animesDemo = [
         year: 2017,
         status: 'Done',
         video: 'https://www.youtube.com/embed/YgNL_TdQ6t8',
+        view: 1044,
     },
     {
         name: 'Grand Blue',
@@ -38,6 +41,7 @@ let animesDemo = [
         year: 2016,
         status: 'Done',
         video: 'https://www.youtube.com/embed/PqI8iNKcxIQ',
+        view: 343243,
     },
     {
         name: 'Made in Abyss',
@@ -48,6 +52,7 @@ let animesDemo = [
         year: 2017,
         status: 'Done',
         video: 'https://www.youtube.com/embed/qNPq7sTdI-M',
+        view: 354364,
     },
     {
         name: 'Sword Art Online',
@@ -58,6 +63,7 @@ let animesDemo = [
         year: 2016,
         status: 'Not Done',
         video: 'https://www.youtube.com/embed/UJ85ZbCtpA4',
+        view: 60342,
     },
     {
         name: 'Dr.Stones',
@@ -68,6 +74,7 @@ let animesDemo = [
         year: 2019,
         status: 'Not Done',
         video: 'https://www.youtube.com/embed/Yq23a6udMqU',
+        view: 43535,
     },
     {
         name: 'Fate Grand Order',
@@ -78,6 +85,7 @@ let animesDemo = [
         year: 2020,
         status: 'Done',
         video: 'https://www.youtube.com/embed/-7g-mcovyng',
+        view: 532564,
     },
     {
         name: 'The Irregular at Magic High School',
@@ -88,6 +96,7 @@ let animesDemo = [
         year: 2020,
         status: 'Not Done',
         video: 'https://www.youtube.com/embed/4HmxNXyT_04',
+        view: 5435643,
     },
     {
         name: 'One Piece',
@@ -98,6 +107,7 @@ let animesDemo = [
         year: 2018,
         status: 'Not Done',
         video: 'https://www.youtube.com/embed/Uf6vEPjXPcI',
+        view: 53254634,
     },
     {
         name: 'Konosuba',
@@ -108,6 +118,7 @@ let animesDemo = [
         year: 2020,
         status: 'Done',
         video: 'https://www.youtube.com/embed/WYIcNqPH-2Y',
+        view: 3525646,
     },
     {
         name: 'Date a live',
@@ -118,6 +129,7 @@ let animesDemo = [
         year: 2016,
         status: 'Not Done',
         video: 'https://www.youtube.com/embed/EZahSVg4wCU',
+        view: 533250,
     },
     {
         name: 'Hunter x Hunter',
@@ -128,6 +140,7 @@ let animesDemo = [
         year: 2018,
         status: 'Not done',
         video: 'https://www.youtube.com/embed/G3bCqi0Oj3s',
+        view: 342303,
     },
     {
         name: 'Doraemon',
@@ -138,6 +151,7 @@ let animesDemo = [
         year: 2019,
         status: 'Done',
         video: 'https://www.youtube.com/embed/UzWpkUCSDP4',
+        view: 32525,
     },
     {
         name: 'Conan',
@@ -148,7 +162,8 @@ let animesDemo = [
         year: 2017,
         status: 'Not done',
         video: 'https://www.youtube.com/embed/-XFgSjz95kQ',
-    },
+        view: 305324
+    }
 ];
 luutru();
 
@@ -158,6 +173,7 @@ function displayAnimes(listAnimes){
     let domAnime = document.getElementById('animes');
     domAnime.innerHTML = '';
 
+    console.log(listAnimes);
     for (const anime of listAnimes) {
         let html = `
         <div class="card col-4 p-3" style="width: 18rem;">
@@ -174,12 +190,14 @@ function displayAnimes(listAnimes){
                    
                 </h6>
                 <p class="card-text">${getShortDescription(anime.description)}</p>
-                <button onclick="viewDetail('${anime.name}')" class="btn btn-primary">Play</button>
+                <button onclick="viewDetail('${anime.name}')" class="btn btn-primary">Watch</button>
+                <button onclick="addFavorite('${anime.name}')" class="btn btn-danger">Like</button>
             </div>
         </div>
         `;
         domAnime.innerHTML += html;
     }
+    
 }
 
 
@@ -193,7 +211,6 @@ function luutru() {
 }
 
 function viewDetail(name){
-    
     localStorage.setItem('selected', name);
     window.location.href = 'detail.html';
 }
@@ -203,3 +220,9 @@ function xemphim(name){
     localStorage.setItem('selected', name);
     window.location.href = 'list-item/detail.html';
 }
+
+function addView() {
+    
+}
+
+

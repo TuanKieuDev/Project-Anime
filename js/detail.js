@@ -4,6 +4,8 @@ let animes = JSON.parse(localStorage.getItem('animes'));
 let anime = animes.find(function (p) {
     return p.name === selectedName;
 });
+anime.view++;
+localStorage.setItem('animes', JSON.stringify(animes));
 
 document.getElementById('anime-name').innerHTML = anime.name;
 document.getElementById('anime-rate').innerHTML = anime.rate ;
@@ -13,6 +15,7 @@ document.getElementById('anime-genres').innerHTML = anime.genres;
 document.getElementById('anime-year').innerHTML = anime.year;
 document.getElementById('anime-status').innerHTML = anime.status;
 document.getElementById('anime-video').src = anime.video;
+document.getElementById('anime-view').innerHTML = anime.view ;
 
 function getRelative() {
     let relative = document.getElementById('relative');
@@ -71,6 +74,7 @@ function addComment() {
     }
     commentDom.value = '';
     listComments.push(comment);
+    listComments.reverse();
     displayListComments(listComments);
 
 }
